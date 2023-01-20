@@ -13,6 +13,7 @@
   * [1225. 암호생성기]
   * [2806. N-Queen]
 * BOJ
+  * [1541. 잃어버린 괄호](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Solution_1541.java)
 * Programmers
   * [최고의 집합](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/Programmers/Lv3/BestSet.java)
 ## 3주차
