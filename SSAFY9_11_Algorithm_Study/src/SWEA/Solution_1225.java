@@ -26,6 +26,7 @@ public class Solution_1225 {
 					c -= i;
 					if(c <= 0) {
 						c = 0;
+						coding = false;
 					}
 					code.add(c);
 				}
