@@ -14,21 +14,23 @@ public class Solution_1225 {
 			//큐 입력받기
 			Queue<Integer> code = new LinkedList<Integer>();
 			for(int i = 0; i<8; i++) {
-				int c = sc.nextInt();
-				code.add(c);
+				int c = sc.nextInt(); //테스트케이스 번호 입력
+				code.add(c);//큐 입력
 			}
 			
 			boolean coding = true;
 			int c = 0;
 			while(coding == true) {
+				//한사이클
 				for(int i = 1; i<=5; i++) {
 					c = code.poll();
 					c -= i;
 					if(c <= 0) {
 						c = 0;
-						coding = false;
+						coding = false;//0이하가 되면 사이클 중단, 암호 완성
 					}
 					code.add(c);
+					if(coding == false) break;
 				}
 			}
 			System.out.print("#" + tc +" ");
