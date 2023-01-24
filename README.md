@@ -10,8 +10,8 @@
 ## 2주차
 * SWEA
   * [1220. Magnetic](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/SWEA/Solution_1220.java)
-  * [1225. 암호생성기]
-  * [2806. N-Queen]
+  * [1225. 암호생성기](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/SWEA/Solution_1225.java)
+  * [2806. N-Queen](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/SWEA/Solution_2806.java)
 * BOJ
   * [1541. 잃어버린 괄호](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Solution_1541.java)
   * [2839. 설탕 배달](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Solution_2839.java)
