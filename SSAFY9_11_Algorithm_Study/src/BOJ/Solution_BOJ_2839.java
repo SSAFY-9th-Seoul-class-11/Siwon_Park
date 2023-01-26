@@ -2,7 +2,7 @@ package BOJ;
 
 import java.util.Scanner;
 
-public class Solution_2839 {
+public class Solution_BOJ_2839 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

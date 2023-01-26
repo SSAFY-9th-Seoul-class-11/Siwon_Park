@@ -2,7 +2,7 @@ package SWEA;
 
 import java.util.Scanner;
 
-public class Solution_2806 {
+public class Solution_SWEA_2806 {
 	static int count; //정답 수
 	static int[] board; // 체스판 board의 인덱스(y)는 행, 값(x)은 열 board[y]=x
 
