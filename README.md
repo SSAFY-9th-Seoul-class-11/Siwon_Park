@@ -19,9 +19,9 @@
   * [최고의 집합](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/Programmers/Lv3/BestSet.java)
 ## 3주차
 * SWEA
- * [1215. 회문1](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/SWEA/Solution_SWEA_1215.java)
- * [1249. 보급로]
- * [1860. 진기의 최고급 붕어빵]
+  * [1215. 회문1](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/SWEA/Solution_SWEA_1215.java)
+  * [1249. 보급로]
+  * [1860. 진기의 최고급 붕어빵]
 * BOJ(DFS, BFS)
 * Programmers
 ## 4주차
