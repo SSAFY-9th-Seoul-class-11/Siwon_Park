@@ -21,8 +21,9 @@
 * SWEA
   * [1215. 회문1](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/SWEA/Solution_SWEA_1215.java)
   * [1249. 보급로]
-  * [1860. 진기의 최고급 붕어빵]
+  * [1860. 진기의 최고급 붕어빵](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/SWEA/Solution_SWEA_1860.java)
 * BOJ(DFS, BFS)
+  * [1012. 유기농 배추]
 * Programmers
 ## 4주차
 * SWEA
