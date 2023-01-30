@@ -16,15 +16,15 @@ public class Network {
 		return answer;
 	}
 
-	boolean[] dfs(int[][] computers, int i, boolean[] check) {
-		check[i] = true;
+	boolean[] dfs(int[][] computers, int i, boolean[] visited) {
+		visited[i] = true;
 
 		for (int j = 0; j < computers.length; j++) {
-			if (i != j && computers[i][j] == 1 && check[j] == false) {
-				check = dfs(computers, j, check);
+			if (i != j && computers[i][j] == 1 && visited[j] == false) {
+				visited = dfs(computers, j, visited);
 			}
 		}
-		return check;
+		return visited;
 	}
 
 }
