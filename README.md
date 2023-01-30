@@ -24,7 +24,9 @@
   * [1860. 진기의 최고급 붕어빵](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/SWEA/Solution_SWEA_1860.java)
 * BOJ(DFS, BFS)
   * [1012. 유기농 배추](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Solution_BOJ_1012.java)
+  * [2606. 바이러스](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Solution_BOJ_2606.java)
 * Programmers
+  * [네트워크](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/Programmers/Lv3/Network.java)
 ## 4주차
 * SWEA
 * BOJ
