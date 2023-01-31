@@ -29,7 +29,10 @@
   * [네트워크](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/Programmers/Lv3/Network.java)
 ## 4주차
 * SWEA
-* BOJ
+  * [1244. 최대 상금]
+  * [6109. 추억의 2048게임]
+  * [15758. 무한 문자열]
+* BOJ(정렬)
 * Programmers
 ## 5주차
 * SWEA
