@@ -20,7 +20,7 @@
 ## 3주차
 * SWEA
   * [1215. 회문1](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/SWEA/Solution_SWEA_1215.java)
-  * [1249. 보급로]
+  * [1249. 보급로](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/SWEA/Solution_SWEA_1249.java)
   * [1860. 진기의 최고급 붕어빵](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/SWEA/Solution_SWEA_1860.java)
 * BOJ(DFS, BFS)
   * [1012. 유기농 배추](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Solution_BOJ_1012.java)
