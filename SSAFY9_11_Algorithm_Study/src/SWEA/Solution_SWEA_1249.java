@@ -37,9 +37,11 @@ public class Solution_SWEA_1249 {
 				String s = br.readLine();
 				for(int j=0; j<N; j++) {
 					map[i][j] = s.charAt(j) - '0';
+					time[i][j] = Integer.MAX_VALUE;
 				}
 			}
 
+			time[0][0] = 0;
 			dfs(0, 0);
 			
 			System.out.println("#" + (tc) + " "+min);
@@ -47,6 +49,7 @@ public class Solution_SWEA_1249 {
 	}
 	
 	public static void dfs(int x, int y) {
+		visited[y][x] = true;
 		if(x == N-1 && y == N-1) {
 			min = Math.min(min, time[N-1][N-1]);
 			return;
