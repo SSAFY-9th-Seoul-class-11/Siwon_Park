@@ -1,6 +1,8 @@
-# Siwon_Park
+# 🗻알푸스📚
 
-알고리즘 스터디 화이팅~!~!
+ : 알고리즘 푸는 스터디
+
+알푸스 짱 하이디가 되자!
 
 ## 1주차
 * SWEA
@@ -33,7 +35,7 @@
   * [6109. 추억의 2048게임]
   * [15758. 무한 문자열]
 * BOJ(정렬)
-  * [1449. 수리공 항승]
+  * [1449. 수리공 항승](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Solution_BOJ_1449.java)
   * [1931. 회의실 배정]
 * Programmers
 ## 5주차
