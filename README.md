@@ -36,7 +36,7 @@
   * [15758. 무한 문자열]
 * BOJ(정렬)
   * [1449. 수리공 항승](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Solution_BOJ_1449.java)
-  * [1931. 회의실 배정]
+  * [4963. 섬의 개수](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Solution_BOJ_4963.java)
 * Programmers
 ## 5주차
 * SWEA
