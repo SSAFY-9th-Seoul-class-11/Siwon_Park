@@ -32,7 +32,7 @@
 ## 4주차
 * SWEA
   * [1244. 최대 상금]
-  * [6109. 추억의 2048게임]
+  * [6109. 추억의 2048게임](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/SWEA/Solution_SWEA_6109.java)
   * [15758. 무한 문자열]
 * BOJ(정렬)
   * [1449. 수리공 항승](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Solution_BOJ_1449.java)
