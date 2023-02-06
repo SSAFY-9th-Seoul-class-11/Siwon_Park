@@ -28,18 +28,21 @@ public class Solution_SWEA_15758 {
 			
 			int lcm = max*min/gcd;//최소공배수 구하기
 			
+			String s = S;
+			String t = T;
+			
 			//각 문자열이 최소 공배수 길이가 될 때까지 더해주기
-			while(S.length() < lcm) {
-				S += S;
+			while(s.length() < lcm) {
+				s += S;
 			}
-			while(T.length() < lcm){
-				T += T;
+			while(t.length() < lcm){
+				t += T;
 			}
 			
-			if(S.equals(T)) {
-				System.out.println("#" + tc + " yes"+ T + " "+ S);
+			if(s.equals(t)) {
+				System.out.println("#" + tc + " yes");
 			}else {
-				System.out.println("#" + tc + " no"+ T + " "+ S);
+				System.out.println("#" + tc + " no");
 			}
 		}
 		
