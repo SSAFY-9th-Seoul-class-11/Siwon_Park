@@ -25,7 +25,6 @@ public class Solution_SWEA_9940 {
 				if(!num[i]) output = " No";
 			}
 			System.out.println("#" + tc + output);
-			//bw.write("#" + tc + output + "\n");
 		}
 	}
 }
