@@ -46,4 +46,5 @@
 * BOJ
   * [1011. Fly me to the Alpha Centauri](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Solution_BOJ_1011.java)
   * [6209. 제자리 멀리뛰기](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Solution_BOJ_6209.java)
+  * [1654. 랜선 자르기](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Solution_BOJ_1654.java)
 * Programmers
