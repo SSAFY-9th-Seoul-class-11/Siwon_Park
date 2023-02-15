@@ -44,6 +44,7 @@
   * [9940. 순열1](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/SWEA/Solution_SWEA_9940.java)
   * [2819. 격자판의 숫자 이어 붙이기](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/SWEA/Solution_SWEA_2819.java)
 * BOJ
-  *[1011. Fly me to the Alpha Centauri]()
-  *[6209. 제자리 멀리뛰기]()
+  * [1011. Fly me to the Alpha Centauri](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Solution_BOJ_1011.java)
+  * [6209. 제자리 멀리뛰기](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Solution_BOJ_6209.java)
+  * [1654. 랜선 자르기](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Solution_BOJ_1654.java)
 * Programmers
