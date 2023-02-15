@@ -22,6 +22,7 @@ public class Solution_BOJ_6209 {
 			dis[i] = Integer.parseInt(br.readLine());
 		}
 		dis[n] = d;
+		//Arrays.sort(dis);
 		
 		end = d; // 최대값
 
@@ -38,10 +39,10 @@ public class Solution_BOJ_6209 {
 				else idx = i;
 			}
 			if(count > m) { // 제거할 돌섬 수 보다 많으면 거리 값을 줄여야 함
-				result = mid; // 최소 거리의 최대 값이므로, 여기에서 result를 기록
+//				result = mid; // 최소 거리의 최대 값이므로, 여기에서 result를 기록
 				end = mid-1;
 			} else { // 제거할 돌섬 수보다 작거나 같으면 거리 값을 길게 해야 함
-				//result = mid; // 최소 거리의 최대 값이므로, 여기에서 result를 기록
+				result = mid; // 최소 거리의 최대 값이므로, 여기에서 result를 기록
 				start = mid+1;
 			}
 		}
