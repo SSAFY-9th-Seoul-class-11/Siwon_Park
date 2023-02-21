@@ -48,3 +48,10 @@
   * [6209. 제자리 멀리뛰기](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Solution_BOJ_6209.java)
   * [1654. 랜선 자르기](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Solution_BOJ_1654.java)
 * Programmers
+## 6주차
+* SWEA
+  * [5248. 그룹 나누기](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/SWEA/Solution_SWEA_5248.java)
+  * [1868. 파핑파핑 지뢰찾기]()
+* BOJ
+  * [2565. 전깃줄](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Solution_BOJ_2565.java)
+  * [9465. 스티커](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Solution_BOJ_9465.java)
