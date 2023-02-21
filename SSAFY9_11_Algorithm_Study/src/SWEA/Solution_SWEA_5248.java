@@ -3,59 +3,56 @@ package SWEA;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.StringTokenizer;
 
 // User Problem 5248. [파이썬 S/W 문제해결 구현] 6일차 - 그룹 나누기
-public class Solution_SWEA_5248 {	
+public class Solution_SWEA_5248 {
+	static int[] parent;
+
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int T = Integer.parseInt(br.readLine());
-		
-		for(int tc = 1; tc<=T; tc++) {
+
+		for (int tc = 1; tc <= T; tc++) {
 			StringTokenizer st = new StringTokenizer(br.readLine());
 			int N = Integer.parseInt(st.nextToken()); // 출석번호
 			int M = Integer.parseInt(st.nextToken()); // 신청서 수
-			boolean[][] group = new boolean[N+1][N+1]; // (출석번호 1~N, 최대 조의 수)	
-			int idx = 0; // group의 열변수(그룹 수!)
+
+			parent = new int[N + 1]; // 부모 배열
+			for (int i = 1; i <= N; i++) {
+				parent[i] = i; // 각 출석번호의 부모를 해당 출석번호로 초기화
+			}
 			
 			st = new StringTokenizer(br.readLine());
-			// M장의 신청서에서 각각 두 번호를 입력받아서 그룹을 확인하고 없다면 만들어줌
-			for(int i = 0; i<M; i++) { 
+			// M장의 신청서의 두 번호쌍들을 입력받아 유니온 연산 해준다
+			for (int i = 1; i <= M; i ++) {
 				int a = Integer.parseInt(st.nextToken());
 				int b = Integer.parseInt(st.nextToken());
-				boolean newGroup = true; // 둘 다 아무 조에 없을 경우 새로운 그룹을 만들라는 불린형 변수
-
-				for(int j = 0; j<=idx; j++) {
-					if(group[a][j] && group[b][j]) { // 두 번호 모두 해당 조에 있다면 종료
-						newGroup = false; //새 그룹을 만들 필요 없음
-						break;
-					}else if(group[a][j] || group[b][j]){ //한 번호만 있다면 그 조에 다른 번호도 넣어줌
-						group[a][j] = true;
-						group[b][j] = true;
-						newGroup = false; //새 그룹을 만들 필요 없음
-						break;
-					}					
-				}
-				//새 그룹을 만들어야 한다면
-				if(newGroup) {
-					idx++; //다음 열을 만들어주고
-					group[a][idx] = true;
-					group[b][idx] = true;
-				}
+				union(a, b);// 페어끼리 유니온 연산!
 			}
 			
-			//N까지의 출석번호 중 그룹에 없는 애들 혼자 새 그룹으로 만들어줌
-			for(int i = 1; i<=N; i++) { //출석번호 1부터 시작
-				boolean in = false; // 그룹에 속해있는지 확인하는 불린 변수
-				for(int j =1; j<=idx; j++) { //0번 열에는 그룹이 안생김
-					if(group[i][j]) { //해당 조에 속해있다면
-						in = true; // 속해있다 체크
-						break;
-					}
-				}
-				if(!in) idx++; // i가 그룹에 속해있지 않다면 그룹 수를 늘려줌
+			Set<Object> hset = new HashSet<>();
+			for (int i = 1; i <= N; i++) { // 모든 출석번호의 부모를 set에 넣어줌(중복 없음)
+				hset.add(find(i));
 			}
-			System.out.println("#" + tc + " " + idx);
-		}	
+			System.out.println("#" + tc + " " + hset.size());
+		}
+	}
+
+	// 부모를 찾아주는 함수
+	public static int find(int x) {
+		if (parent[x] == x) // 부모가 자기 자신이면 본인 리턴
+			return x;
+		else// 아니라면 부모의 부모를 찾아줘서 리턴
+			return parent[x] = find(parent[x]);
+	}
+	// 유니온 함수! 원소 a와 b를 합쳐주는 함수
+	public static void union(int a, int b) {
+		a = find(a);
+		b = find(b);
+		if (a != b) //a와 b의 부모가 다르다면
+			parent[b] = a; //b의 부모를 a의 부모와 같게 한다
 	}
 }
