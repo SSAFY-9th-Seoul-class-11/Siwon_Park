@@ -26,11 +26,11 @@ public class Solution_SWEA_5248 {
 			}
 			
 			st = new StringTokenizer(br.readLine());
-			// M장의 신청서의 두 번호쌍들을 입력받아 유니온 연산 해준다
+			// M장의 신청서의 두 번호쌍을 입력받아 유니온 연산 해준다
 			for (int i = 1; i <= M; i ++) {
 				int a = Integer.parseInt(st.nextToken());
 				int b = Integer.parseInt(st.nextToken());
-				union(a, b);// 페어끼리 유니온 연산!
+				union(a, b);// 번호쌍 유니온 연산!
 			}
 			
 			Set<Object> hset = new HashSet<>();
