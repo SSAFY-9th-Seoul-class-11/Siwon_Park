@@ -55,3 +55,8 @@
 * BOJ
   * [2565. 전깃줄](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Solution_BOJ_2565.java)
   * [9465. 스티커](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Solution_BOJ_9465.java)
+## 7주차
+* BOJ
+  * [17070. 파이프 옮기기 1](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Solution_BOJ_17070.java)
+  * [17406. 배열 돌리기 4]()
+  
