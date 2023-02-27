@@ -2,7 +2,7 @@ package BOJ;
 
 import java.util.Scanner;
 
-public class Solution_BOJ_1012 {
+public class Main_1012 {
 
 	public static int[][] field = new int[50][50];//배추밭
 	

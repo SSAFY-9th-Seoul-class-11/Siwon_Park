@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
-public class Solution_BOJ_3109 {
+public class Main_3109 {
 	static int count; //정답 수
 	static boolean[][] map; // 빵집이 있는 마을
 	static int R, C;

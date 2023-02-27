@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Solution_BOJ_11729 {
+public class Main_11729 {
 	
 	static int N;//N개의 원판
 	static StringBuilder sb = new StringBuilder();

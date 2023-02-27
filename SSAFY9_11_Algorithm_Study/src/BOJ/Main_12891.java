@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Solution_BOJ_12891 {
+public class Main_12891 {
 	static int S;//DNA문자열 길이
 	static int P;//비밀번호로 사용할 부분문자열 길이
 	static int[] DNA = new int[4];//ACGT 순으로 부분 문자열이 포함하는 문자의 수

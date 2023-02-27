@@ -2,7 +2,7 @@ package BOJ;
 
 import java.util.Scanner;
 
-public class Solution_BOJ_4963 {
+public class Main_4963 {
 	
 	static int w;//너비
 	static int h;//높이

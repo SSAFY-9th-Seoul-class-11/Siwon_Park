@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Solution_BOJ_1244 {
+public class Main_1244 {
 	static int N;
 	static int[] onoff;
 

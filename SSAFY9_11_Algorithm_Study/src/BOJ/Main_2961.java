@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Solution_BOJ_2961 {
+public class Main_2961 {
 	static int N;//N개의 재료
 	static int[] S;//신맛 배열(곱)
 	static int[] B;//쓴맛 배열(합)

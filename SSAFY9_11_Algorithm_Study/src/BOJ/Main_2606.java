@@ -2,7 +2,7 @@ package BOJ;
 
 import java.util.Scanner;
 
-public class Solution_BOJ_2606 {
+public class Main_2606 {
 	
 	public static int c;//컴퓨터 수(노드 수)
 	public static int link;//직접 연결되어 있는 컴퓨터 쌍의 수(라인 수)

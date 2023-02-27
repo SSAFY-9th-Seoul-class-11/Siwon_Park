@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-public class Solution_BOJ_13023 {
+public class Main_13023 {
 	static int N, M;
 	static ArrayList<Integer>[] friend;
 	static int[] visited;

@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Solution_BOJ_1873 {
+public class Main_1873 {
 	static int H, W, N;
 	static char map[][];
 	static char input[];

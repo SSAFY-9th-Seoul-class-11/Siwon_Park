@@ -9,7 +9,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.StringTokenizer;
 
-public class Solution_BOJ_1987 {
+public class Main_1987 {
 	static int R, C;
 	static char[][] board;
 	static Set<Object> alphabet = new HashSet<>();
@@ -36,7 +36,6 @@ public class Solution_BOJ_1987 {
 	}
 	
 	public static void dfs(int x, int y, int count) {
-		// 조건이 맞을 때 return  하는 코드가 필요하다
 		if(max<count) max = count;
 		int dirCnt = 0;
 		for(int i = 0; i<4; i++) {

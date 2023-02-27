@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Solution_BOJ_1247 {
+public class Main_1247 {
 	static int N, min;
 	static boolean[] visited; // 방문 체크
 	static int[] order; // 방문 순서 저장
