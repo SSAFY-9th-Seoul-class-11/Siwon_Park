@@ -2,7 +2,7 @@ package SWEA;
 
 import java.util.Scanner;
 
-public class Solution_SWEA_2806 {
+public class Solution_2806 {
 	static int count; //정답 수
 	static int[] col; // col의 인덱스(x)는 행, 값(y)은 열 col[x]=y
 

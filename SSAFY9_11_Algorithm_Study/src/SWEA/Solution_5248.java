@@ -8,7 +8,7 @@ import java.util.Set;
 import java.util.StringTokenizer;
 
 // User Problem 5248. [파이썬 S/W 문제해결 구현] 6일차 - 그룹 나누기
-public class Solution_SWEA_5248 {
+public class Solution_5248 {
 	static int[] parent;
 
 	public static void main(String[] args) throws IOException {

@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Solution_SWEA_6109 {
+public class Solution_6109 {
 	static int N;
 	static String S;
 	static int[][] tile;

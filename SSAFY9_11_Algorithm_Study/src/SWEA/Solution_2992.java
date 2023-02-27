@@ -3,7 +3,7 @@ package SWEA;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Solution_SWEA_2992 {
+public class Solution_2992 {
 	static int X;
 	static int[] x;
 	

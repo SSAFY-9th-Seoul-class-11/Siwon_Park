@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Solution_SWEA_5644 {
+public class Solution_5644 {
 
 	static int[][] map = new int[10][10];
 	static int[] vA, vB;// 사용자 A, B 이동 방향

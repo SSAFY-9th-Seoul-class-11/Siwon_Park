@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Solution_SWEA_4012 {
+public class Solution_4012 {
 	static int N;//식재료 수
 	static int[][] table;
 	static boolean[] selected;//선택

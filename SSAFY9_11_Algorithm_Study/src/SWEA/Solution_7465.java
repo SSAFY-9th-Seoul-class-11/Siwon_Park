@@ -7,7 +7,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.StringTokenizer;
 
-public class Solution_SWEA_7465 {
+public class Solution_7465 {
 
 	static int[] parent;
 	static int N, M;

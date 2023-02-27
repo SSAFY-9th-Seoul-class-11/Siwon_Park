@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-public class Solution_SWEA_3289 {
+public class Solution_3289 {
 
 	static int n;
 	static int[] parents;
