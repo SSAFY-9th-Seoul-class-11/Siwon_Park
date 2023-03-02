@@ -12,18 +12,18 @@ public class Solution_3124 {
 	static Edge[] edges;
 
 	static class Edge implements Comparable<Edge> {
-		int A, B, C; // A번 정점과 B번 정점이 가중치 C인 간선으로 연결되어 있다.
+		int from, to, weight; // A번 정점과 B번 정점이 가중치 C인 간선으로 연결되어 있다.
 
-		public Edge(int A, int B, int C) {
+		public Edge(int from, int to, int weight) {
 			super();
-			this.A = A;
-			this.B = B;
-			this.C = C;
+			this.from = from;
+			this.to = to;
+			this.weight = weight;
 		}
 
 		@Override
 		public int compareTo(Edge o) {
-			return Integer.compare(this.C, o.C);
+			return Integer.compare(this.weight, o.weight);
 		}
 	}
 
@@ -39,11 +39,11 @@ public class Solution_3124 {
 
 			for (int i = 0; i < E; i++) {
 				st = new StringTokenizer(br.readLine());
-				int A = Integer.parseInt(st.nextToken());
-				int B = Integer.parseInt(st.nextToken());
-				int C = Integer.parseInt(st.nextToken());
+				int from = Integer.parseInt(st.nextToken());
+				int to = Integer.parseInt(st.nextToken());
+				int weight = Integer.parseInt(st.nextToken());
 
-				edges[i] = new Edge(A - 1, B - 1, C);
+				edges[i] = new Edge(from - 1, to - 1, weight);
 			}
 			Arrays.sort(edges);
 			
@@ -52,8 +52,8 @@ public class Solution_3124 {
 			int cnt = 0;
 			long result = 0;
 			for(Edge edge: edges) {
-				if(union(edge.A, edge.B)) {
-					result += edge.C;
+				if(union(edge.from, edge.to)) {
+					result += edge.weight;
 					if(++cnt == V-1) break;
 				}
 			}
