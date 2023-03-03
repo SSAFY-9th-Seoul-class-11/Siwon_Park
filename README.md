@@ -61,3 +61,7 @@
   * [17406. 배열 돌리기 4](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Main_17406.java)
   * [11687. 팩토리얼 0의 개수](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Main_11687.java)
   * [2567. 색종이-2](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Main_2567.java)
+## 8주차
+* BOJ
+  * [3019. 테트리스](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Main_3019_%ED%85%8C%ED%8A%B8%EB%A6%AC%EC%8A%A4_%EB%B0%95%EC%8B%9C%EC%9B%90.java)
+  * [17472. 다리 만들기 2]()
