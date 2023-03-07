@@ -2,7 +2,7 @@ package BOJ;
 
 import java.util.Scanner;
 
-public class Main_1541 {
+public class Main_1541_잃어버린괄호_박시원 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
