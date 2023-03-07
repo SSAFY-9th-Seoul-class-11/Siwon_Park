@@ -15,7 +15,7 @@
   * [1225. 암호생성기](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/SWEA/Solution_SWEA_1225.java)
   * [2806. N-Queen](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/SWEA/Solution_SWEA_2806.java)
 * BOJ(그리디)
-  * [1541. 잃어버린 괄호](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Main_1541.java)
+  * [1541. 잃어버린 괄호](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Main_1541_잃어버린괄호_박시원.java)
   * [2839. 설탕 배달](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Main_2839.java)
 * Programmers
   * [최고의 집합](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/Programmers/Lv3/BestSet.java)
@@ -65,3 +65,4 @@
 * BOJ
   * [3019. 테트리스](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Main_3019_%ED%85%8C%ED%8A%B8%EB%A6%AC%EC%8A%A4_%EB%B0%95%EC%8B%9C%EC%9B%90.java)
   * [17472. 다리 만들기 2]()
+  * [14719. 빗물](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Main_14719_%EB%B9%97%EB%AC%BC_%EB%B0%95%EC%8B%9C%EC%9B%90.java)
