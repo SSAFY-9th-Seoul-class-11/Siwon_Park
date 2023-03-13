@@ -8,23 +8,18 @@ import java.util.StringTokenizer;
 public class Main_2096_내려가기_박시원 {
 
 	static int N;
-	static int[][] map, minCost, maxCost;
+	static int[][] minCost, maxCost;
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		N = Integer.parseInt(br.readLine());
-		map = new int[N][3];
 		minCost = new int[N][3];
 		maxCost = new int[N][3];
 		for (int i = 0; i < N; i++) {
 			StringTokenizer st = new StringTokenizer(br.readLine());
 			for (int j = 0; j < 3; j++) {
-				map[i][j] = minCost[i][j] = maxCost[i][j ]= Integer.parseInt(st.nextToken());
+				minCost[i][j] = maxCost[i][j ]= Integer.parseInt(st.nextToken());
 			}
-		}
-		
-		for (int i = 0; i < 3; i++) {
-			minCost[N - 1][i] = maxCost[N - 1][i] = map[N - 1][i];
 		}
 		
 		System.out.println(findMax() + " " + findMin());
