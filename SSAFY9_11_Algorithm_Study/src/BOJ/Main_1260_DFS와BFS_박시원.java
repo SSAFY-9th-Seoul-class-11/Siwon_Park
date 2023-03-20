@@ -12,7 +12,7 @@ public class Main_1260_DFS와BFS_박시원 {
 	static StringBuilder sb = new StringBuilder();
 	static int N, M, V;
 	static int[][] arr;
-	static boolean[] check;
+	static boolean[] visited;
 
 	static Queue<Integer> q = new LinkedList<>();
 
@@ -20,45 +20,43 @@ public class Main_1260_DFS와BFS_박시원 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine());
 
-		N = Integer.parseInt(st.nextToken());
-		M = Integer.parseInt(st.nextToken());
-		V = Integer.parseInt(st.nextToken());
+		N = Integer.parseInt(st.nextToken()); //정점의 개수
+		M = Integer.parseInt(st.nextToken()); //간선의 개수
+		V = Integer.parseInt(st.nextToken()); //탐색을 시작할 정점의 번호
 
 		arr = new int[N + 1][N + 1];
-		check = new boolean[N + 1];
+		visited = new boolean[N + 1];
 
 		for (int i = 0; i < M; i++) {
-			StringTokenizer str = new StringTokenizer(br.readLine());
-
-			int a = Integer.parseInt(str.nextToken());
-			int b = Integer.parseInt(str.nextToken());
-
+			st = new StringTokenizer(br.readLine());
+			int a = Integer.parseInt(st.nextToken());
+			int b = Integer.parseInt(st.nextToken());
 			arr[a][b] = arr[b][a] = 1;
-			dfs(V);
-			sb.append("\n");
-			check = new boolean[N + 1];
-
-			bfs(V);
-
-			System.out.println(sb);
+			
 		}
-	}
+		dfs(V);
+		sb.append("\n");
+		visited = new boolean[N + 1];
 
+		bfs(V);
+
+		System.out.println(sb);
+	}
+	//dfs
 	public static void dfs(int start) {
 
-		check[start] = true;
+		visited[start] = true;
 		sb.append(start + " ");
 
 		for (int i = 0; i <= N; i++) {
-			if (arr[start][i] == 1 && !check[i])
+			if (arr[start][i] == 1 && !visited[i])
 				dfs(i);
 		}
-
 	}
-
+	//bfs
 	public static void bfs(int start) {
 		q.add(start);
-		check[start] = true;
+		visited[start] = true;
 
 		while (!q.isEmpty()) {
 
@@ -66,9 +64,9 @@ public class Main_1260_DFS와BFS_박시원 {
 			sb.append(start + " ");
 
 			for (int i = 1; i <= N; i++) {
-				if (arr[start][i] == 1 && !check[i]) {
+				if (arr[start][i] == 1 && !visited[i]) {
 					q.add(i);
-					check[i] = true;
+					visited[i] = true;
 				}
 			}
 		}
