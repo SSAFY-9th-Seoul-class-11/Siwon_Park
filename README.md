@@ -68,5 +68,13 @@
   * [14719. 빗물](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Main_14719_%EB%B9%97%EB%AC%BC_%EB%B0%95%EC%8B%9C%EC%9B%90.java)
 ## 9주차
 * BOJ
-  * [1149. RGB거리]()
-  * [2096. 내려가기]()
+  * [1149. RGB거리](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Main_1149_RGB%EA%B1%B0%EB%A6%AC_%EB%B0%95%EC%8B%9C%EC%9B%90.java)
+  * [2096. 내려가기](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Main_2096_%EB%82%B4%EB%A0%A4%EA%B0%80%EA%B8%B0_%EB%B0%95%EC%8B%9C%EC%9B%90.java)
+  * [1620. 나는야 포켓몬 마스터 이다솜](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Main_1620_%EB%82%98%EB%8A%94%EC%95%BC%ED%8F%AC%EC%BC%93%EB%AA%AC%EB%A7%88%EC%8A%A4%ED%84%B0%EC%9D%B4%EB%8B%A4%EC%86%9C_%EB%B0%95%EC%8B%9C%EC%9B%90.java)
+  * [1003. 피보나치 함수](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Main_1003_%ED%94%BC%EB%B3%B4%EB%82%98%EC%B9%98%ED%95%A8%EC%88%98_%EB%B0%95%EC%8B%9C%EC%9B%90.java)
+## 10주차
+* BOJ
+  * [2206. 벽 부수고 이동하기](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Main_2206_%EB%B2%BD%EB%B6%80%EC%88%98%EA%B3%A0%EC%9D%B4%EB%8F%99%ED%95%98%EA%B8%B0.java)
+  * [15654. N과M](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Main_15654_N%EA%B3%BCM_%EB%B0%95%EC%8B%9C%EC%9B%90.java)
+  * [7576. 토마토](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Main_7576_%ED%86%A0%EB%A7%88%ED%86%A0_%EB%B0%95%EC%8B%9C%EC%9B%90.java)
+  * [1260. DFS와 BFS](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Main_1260_DFS%EC%99%80BFS_%EB%B0%95%EC%8B%9C%EC%9B%90.java)
