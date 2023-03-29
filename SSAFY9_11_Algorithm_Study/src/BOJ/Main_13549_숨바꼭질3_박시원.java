@@ -1,0 +1,63 @@
+package BOJ;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.StringTokenizer;
+
+public class Main_13549_숨바꼭질3_박시원 {
+	static int N, K, min;
+	static Queue<Integer> queue = new LinkedList<>();
+	
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine());
+		
+		N = Integer.parseInt(st.nextToken()); //수빈 위치
+		K = Integer.parseInt(st.nextToken()); //동생 위치
+
+		min = Math.abs(K-N); //최소시간을 최대로 초기화
+		
+		if(N<K) find();
+		System.out.println(min);
+	}
+	
+	public static void find() {
+		queue.add(N);
+		int[] time = new int[100001];//해당 위치에서의 시간 체크
+		time[N] = 1;
+		while (!queue.isEmpty()) {
+			int x = queue.poll();
+			for(int i = 0; i<3; i++) {
+				int nx = 0;
+				if(i == 0) {
+					nx = x-1;
+				}
+				else if(i == 1) {
+					nx = x+1;
+				}
+				else if(i == 2) {
+					nx = x*2;
+				}
+				
+				if(nx == K) {
+					min = Math.min(min, time[x]);
+					return;
+				}
+				
+				if(nx<=100000 && nx>=0 && time[nx] == 0) {
+					if(i==2) {
+						time[nx] = time[x];
+					}else {
+						time[nx] = time[x]+1;
+					}
+					queue.add(nx);
+				}	
+			}	
+		}
+		return;
+	}
+
+}
