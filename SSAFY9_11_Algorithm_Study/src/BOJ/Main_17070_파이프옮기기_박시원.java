@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main_17070 {
+public class Main_17070_파이프옮기기_박시원 {
 
 	static int N;
 	static int[][] map;
