@@ -10,7 +10,7 @@ import java.util.StringTokenizer;
 
 public class Main_14502_연구소_박시원 {
 	static int N, M, max;
-	static int[][] map, copyMap, spreadMap;
+	static int[][] Map, spreadMap;
 	static int[] dx = {0, 0, -1, 1};
 	static int[] dy = {-1, 1, 0, 0};
 
@@ -27,36 +27,36 @@ public class Main_14502_연구소_박시원 {
 		
 		N = Integer.parseInt(st.nextToken());
 		M = Integer.parseInt(st.nextToken());
-		map = copyMap = new int[N][M];
+		Map = new int[N][M];
 		for(int i = 0; i<N; i++) {
 			st = new StringTokenizer(br.readLine());
 			for(int j = 0; j<M; j++) {
-				map[i][j] = copyMap[i][j] = Integer.parseInt(st.nextToken());
+				Map[i][j] = Integer.parseInt(st.nextToken());
 			}
 		}
-		
-		makeWall(copyMap, 0);
+		makeWall(0);
 		System.out.println(max);
 	}
 	
-	public static void makeWall(int[][] copyMap, int cnt) {
+	public static void makeWall(int cnt) {//dfs로 벽 만들자
 		if(cnt == 3) {
 			spreadVirus();
 			return;
 		}
 		for(int i = 0; i<N; i++) {
 			for(int j = 0; j<M; j++) {
-				if(copyMap[i][j] == 0) copyMap[i][j] = 1;
-				makeWall(copyMap, cnt+1);
-				copyMap[i][j] = 0;
+				if(Map[i][j] == 0) {
+					Map[i][j] = 1;
+					makeWall(cnt+1);
+					Map[i][j] = 0;
+				}
 			}
 		}
 	}
-	public static void spreadVirus() {
-		spreadMap = new int[N][M];
-		spreadMap = copyMap;
-		for(int i = 0; i<N; i++) {
-			System.arraycopy(copyMap[i], 0, spreadMap[i], 0, M);
+	public static void spreadVirus() {//bfs로 바이러스 퍼트리자
+		spreadMap = new int[N][M]; //바이러스 퍼트릴 배열
+		for(int i = 0; i<N; i++) {//깊은 복사해서 사용
+			spreadMap[i] = Map[i].clone();
 		}
 		Queue<Virus> q = new LinkedList<>();
 		for(int i = 0; i<N; i++) {
@@ -71,8 +71,8 @@ public class Main_14502_연구소_박시원 {
 			for(int i = 0; i<4; i++) {
 				int nx = v.x + dx[i];
 				int ny = v.y + dy[i];
-				if(nx<0 || nx>=N || ny<0 || ny>=M) continue;
-				if(spreadMap[nx][ny] != 0) continue;
+				if(nx<0 || nx>=N || ny<0 || ny>=M) continue; //범위 체크
+				if(spreadMap[nx][ny] != 0) continue; //빈칸 체크
 				spreadMap[nx][ny] = 2;
 				q.add(new Virus(nx, ny));
 			}
