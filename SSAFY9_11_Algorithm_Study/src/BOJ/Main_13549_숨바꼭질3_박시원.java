@@ -8,8 +8,16 @@ import java.util.Queue;
 import java.util.StringTokenizer;
 
 public class Main_13549_숨바꼭질3_박시원 {
-	static int N, K, min;
-	static Queue<Integer> queue = new LinkedList<>();
+	static class Node{
+		int x, time;
+		public Node(int x, int time) {
+			this.x = x;
+			this.time = time;
+		}
+	}
+	
+	static int N, K;
+	static Queue<Node> queue = new LinkedList<>();
 	
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -17,47 +25,37 @@ public class Main_13549_숨바꼭질3_박시원 {
 		
 		N = Integer.parseInt(st.nextToken()); //수빈 위치
 		K = Integer.parseInt(st.nextToken()); //동생 위치
+		                 
+		find();
 
-		min = Math.abs(K-N); //최소시간을 최대로 초기화
-		
-		if(N<K) find();
-		System.out.println(min);
 	}
 	
 	public static void find() {
-		queue.add(N);
+		queue.add(new Node(N, 1));
 		int[] time = new int[100001];//해당 위치에서의 시간 체크
 		time[N] = 1;
 		while (!queue.isEmpty()) {
-			int x = queue.poll();
-			for(int i = 0; i<3; i++) {
-				int nx = 0;
-				if(i == 0) {
-					nx = x-1;
+			Node n = queue.poll();
+			if(n.x+1>=0 && n.x+1<=100000) {
+				if(time[n.x+1] == 0 || time[n.x+1] > n.time+1) {
+					time[n.x+1] = n.time+1;
+					queue.add(new Node(n.x+1, n.time+1));
 				}
-				else if(i == 1) {
-					nx = x+1;
+			}
+			if(n.x-1>=0 && n.x-1<=100000) {
+				if(time[n.x-1] == 0 || time[n.x-1] > n.time+1) {
+					time[n.x-1] = n.time+1;
+					queue.add(new Node(n.x-1, n.time+1));
 				}
-				else if(i == 2) {
-					nx = x*2;
+			}
+			if(n.x*2>=0 && n.x*2<=100000) {
+				if(time[n.x*2] == 0 || time[n.x*2] > n.time) {
+					time[n.x*2] = n.time;
+					queue.add(new Node(n.x*2, n.time));
 				}
-				
-				if(nx == K) {
-					min = Math.min(min, time[x]);
-					return;
-				}
-				
-				if(nx<=100000 && nx>=0 && time[nx] == 0) {
-					if(i==2) {
-						time[nx] = time[x];
-					}else {
-						time[nx] = time[x]+1;
-					}
-					queue.add(nx);
-				}	
-			}	
+			}
 		}
-		return;
+		System.out.println(time[K]-1);
 	}
 
 }
