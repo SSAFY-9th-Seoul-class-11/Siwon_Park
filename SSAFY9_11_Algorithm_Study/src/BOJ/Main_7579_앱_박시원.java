@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 public class Main_7579_앱_박시원 {
-	static int N, M;
+	static int N, M; //N: 현재 활성돠 되어있는 앱 수 M: 
 	static int[] m, c;
 
 	public static void main(String[] args) throws IOException {
