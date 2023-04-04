@@ -33,23 +33,23 @@ public class Main_1043_거짓말_박시원 {
 		for(int i=0; i<M; i++) {
 			people[i] = new ArrayList<>();
 		}
-		int value, pre =0;
+		int a, b =0;
 		for(int i=0; i<M; i++) {
 			st = new StringTokenizer(br.readLine());
 			N = Integer.parseInt(st.nextToken());
 			if(N > 0) {
-				pre = Integer.parseInt(st.nextToken());
-				people[i].add(pre);
+				b = Integer.parseInt(st.nextToken());
+				people[i].add(b);
 			}
 			for(int j=1; j<N; j++) {
-				value = Integer.parseInt(st.nextToken());
-				people[i].add(value);
-				union(pre, value); // 두명씩 union하면 모두가 같은 parent를 갖게 됨.
-				pre = value;
+				a = Integer.parseInt(st.nextToken());
+				people[i].add(a);
+				union(b, a); // 두명씩 union하면 모두가 같은 parent를 갖게 됨.
+				b = a;
 			}
 		}
 		
-		// 4. 진실을 아는 사람들의 parent는 같이 파티를 참여 했으므로 진실을 아는 사람들
+		// 진실을 아는 사람들의 parent는 같이 파티를 참여 했으므로 진실을 아는 사람들
 		int parent;
 		for(int i=1; i<knowing.length; i++) {
 			if(knowing[i]) {
@@ -57,7 +57,7 @@ public class Main_1043_거짓말_박시원 {
 			}
 		}
 		
-		// 5. 진실을 아는 사람들과 파티를 같이 하지 않았으면 total++
+		// 진실을 아는 사람들과 파티를 같이 하지 않았으면 cnt++
 		for(int i=0; i<M; i++) {
 			if(people[i].size() > 0) {
 				parent = find(people[i].get(0));
@@ -65,22 +65,20 @@ public class Main_1043_거짓말_박시원 {
 			}
 		}
 
-		// 6. 거짓말 할 수 있는 파티 최대 수 출력
 		System.out.println(cnt);
 	}
 	
 	public static int find(int x) {
-		if (parent[x] == x) // 부모가 자기 자신이면 본인 리턴
+		if (parent[x] == x)
 			return x;
-		else// 아니라면 부모의 부모를 찾아줘서 리턴
+		else
 			return parent[x] = find(parent[x]);
 	}
-	// 유니온 함수! 원소 a와 b를 합쳐주는 함수
+	
 	public static void union(int a, int b) {
 		a = find(a);
 		b = find(b);
-		if (a != b) //a와 b의 부모가 다르다면
-			parent[b] = a; //b의 부모를 a의 부모와 같게 한다
+		if (a != b)
+			parent[b] = a;
 	}
-
 }
