@@ -13,16 +13,15 @@ public class Main_11404_플로이드_박시원 {
 		StringTokenizer st;
 		int n = Integer.parseInt(br.readLine()); // 도시 수
 		int m = Integer.parseInt(br.readLine()); // 버스 수
-		int INF = Integer.MAX_VALUE;
 		city = new int[n+1][n+1];
 		
 		for(int i = 0; i<m; i++) {
 			st = new StringTokenizer(br.readLine());
-			int a = Integer.parseInt(st.nextToken());
-			int b = Integer.parseInt(st.nextToken());
-			int c = Integer.parseInt(st.nextToken());
+			int a = Integer.parseInt(st.nextToken()); // 출발 도시
+			int b = Integer.parseInt(st.nextToken()); // 도착 도시
+			int c = Integer.parseInt(st.nextToken()); // 필요 비용
 			
-			if(city[a][b]<c && city[a][b] != 0) continue;
+			if(city[a][b]<c && city[a][b] != 0) continue; // 입력받은 비용이 이전 비용보다 크면 받지 않음
 			city[a][b] = c;
 		}
 		
