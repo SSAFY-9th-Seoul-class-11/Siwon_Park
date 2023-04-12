@@ -27,11 +27,11 @@ public class Main_12015_가장긴증가하는부분수열2_박시원 {
 				}
 			}
 		}
-		int cnt = 1;
-		for(int i = 1; i<N; i++) {
-			if(LIS[i-1] < LIS[i]) cnt++;
+		int max = -1;
+		for(int i = 0; i<N; i++) {
+			max = Math.max(LIS[i], max);
 		}
-		System.out.println(cnt);
+		System.out.println(max);
 	}
 
 }
