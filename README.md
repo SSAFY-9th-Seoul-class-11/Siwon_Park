@@ -92,7 +92,7 @@
    * [1932. 정수 삼각형](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Main_1932_%EC%A0%95%EC%88%98%EC%82%BC%EA%B0%81%ED%98%95_%EB%B0%95%EC%8B%9C%EC%9B%90.java)
  ## 13주차
   * BOJ
-    * [2239. 스도쿠]()
+    * [2239. 스도쿠](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Main_2239_%EC%8A%A4%EB%8F%84%EC%BF%A0_%EB%B0%95%EC%8B%9C%EC%9B%90.java)
     * [2623. 음악프로그램]()
     * [1916. 최소비용 구하기]()
     * []()
