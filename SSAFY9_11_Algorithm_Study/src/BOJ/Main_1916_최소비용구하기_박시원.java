@@ -7,13 +7,23 @@ import java.util.StringTokenizer;
 
 public class Main_1916_최소비용구하기_박시원 {
 
-	static int[][] city;
+	static int n, m;
+	static long[][] city;
+	static long[] cost;
+	static boolean[] visited;
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st;
-		int n = Integer.parseInt(br.readLine()); // 도시 수
-		int m = Integer.parseInt(br.readLine()); // 버스 수
-		city = new int[n+1][n+1];
+		n = Integer.parseInt(br.readLine()); // 도시 수
+		m = Integer.parseInt(br.readLine()); // 버스 수
+		city = new long[n+1][n+1];
+//		
+		for(int i = 1; i<=n; i++) {
+            for(int j = 1; j<=n; j++){
+                if(i == j) continue;
+                city[i][j] = Integer.MAX_VALUE;
+            }
+		}
 		
 		for(int i = 0; i<m; i++) {
 			st = new StringTokenizer(br.readLine());
@@ -29,14 +39,36 @@ public class Main_1916_최소비용구하기_박시원 {
 		int start = Integer.parseInt(st.nextToken());
 		int end = Integer.parseInt(st.nextToken());
 		
-		for(int k = 1; k<=n; k++) {
-//			if(k == start || k == end || city[start][k] == 0 || city[k][end] == 0) continue;
-			if(city[start][k] != 0 && city[k][end] != 0 && (city[start][end]>city[start][k]+city[k][end] || city[start][end] == 0)) {
-				city[start][end] = city[start][k]+city[k][end];
-			}
-		}
-		
-		System.out.println(city[start][end]);
+		cost = city[start].clone();
+
+        visited = new boolean[n+1];
+        visited[start] = true;
+
+        for(int i = 1; i<=n; i++) {
+            int idx = minIdx();
+            visited[idx] = true;
+
+            for(int j = 1; j <= n; j++)
+                if(!visited[j])
+                	cost[j] = Math.min(cost[j], cost[idx] + city[idx][j]);
+        }
+
+        System.out.println(cost[end]);
 	}
+	
+	public static int minIdx(){
+        int minIdx = 0;
+        long min = Integer.MAX_VALUE;
+
+        for(int i = 1; i<=n; i++){
+            if(visited[i]) continue;
+
+            if(min>cost[i]){
+                min = cost[i];
+                minIdx = i;
+            }
+        }
+        return minIdx;
+    }
 
 }
