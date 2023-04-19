@@ -17,10 +17,13 @@ public class Main_1916_최소비용구하기_박시원 {
 		n = Integer.parseInt(br.readLine()); // 도시 수
 		m = Integer.parseInt(br.readLine()); // 버스 수
 		city = new long[n+1][n+1];
-//		
+		
 		for(int i = 1; i<=n; i++) {
             for(int j = 1; j<=n; j++){
-                if(i == j) continue;
+                if(i == j) {
+                	city[i][j] = 0;
+                	continue;
+                }
                 city[i][j] = Integer.MAX_VALUE;
             }
 		}
@@ -31,7 +34,7 @@ public class Main_1916_최소비용구하기_박시원 {
 			int b = Integer.parseInt(st.nextToken()); // 도착 도시
 			int c = Integer.parseInt(st.nextToken()); // 필요 비용
 			
-			if(city[a][b]<c && city[a][b] != 0) continue; // 입력받은 비용이 이전 비용보다 크면 받지 않음
+			if(city[a][b]<c) continue; // 입력받은 비용이 이전 비용보다 크면 받지 않음
 			city[a][b] = c;
 		}
 		
