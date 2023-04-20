@@ -10,21 +10,31 @@ public class Main_11279_최대힙_박시원 {
 
 	public static void main(String[] args) throws IOException {
 		PriorityQueue<Integer> priorityQueueHighest = new PriorityQueue<>(Collections.reverseOrder());
+		
 
 		// 0이 아니면 add, 0이면 출력, 단, 배열이 비어있으면 0을 출력!
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		int N = Integer.parseInt(br.readLine());
+		StringBuilder sb = new StringBuilder();
 		
-		while(!priorityQueueHighest.isEmpty()) {
-			int num = Integer.parseInt(br.readLine());
-			if(num != 0) {
-				priorityQueueHighest.add(num);
-			}else {
-				
-			}
+		int N = Integer.parseInt(br.readLine());
+		int[] arr = new int[N];
+		for(int i = 0; i<N; i++) {
+			arr[i] = Integer.parseInt(br.readLine());
 		}
 		
-		
+		for(int i = 0; i<N; i++) {
+			
+			if(arr[i] != 0) {
+				priorityQueueHighest.offer(arr[i]);
+			}else {
+				if(priorityQueueHighest.isEmpty()) {
+					sb.append(0 + "\n");
+				}else {
+					sb.append(priorityQueueHighest.poll() + "\n");
+				}
+			}
+//			System.out.println(priorityQueueHighest.toString());
+		}
+		System.out.println(sb);
 	}
-
 }
