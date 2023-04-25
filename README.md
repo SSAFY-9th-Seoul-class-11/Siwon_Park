@@ -93,6 +93,6 @@
  ## 13주차
   * BOJ
     * [2239. 스도쿠](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Main_2239_%EC%8A%A4%EB%8F%84%EC%BF%A0_%EB%B0%95%EC%8B%9C%EC%9B%90.java)
-    * [2623. 음악프로그램]()
-    * [1916. 최소비용 구하기]()
-    * []()
+    * [2623. 음악프로그램](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Main_2623_%EC%9D%8C%EC%95%85%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8_%EB%B0%95%EC%8B%9C%EC%9B%90.java)
+    * [1916. 최소비용 구하기](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Main_1916_%EC%B5%9C%EC%86%8C%EB%B9%84%EC%9A%A9%EA%B5%AC%ED%95%98%EA%B8%B0_%EB%B0%95%EC%8B%9C%EC%9B%90.java)
+    * [11279. 최대힙](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Main_11279_%EC%B5%9C%EB%8C%80%ED%9E%99_%EB%B0%95%EC%8B%9C%EC%9B%90.java)
