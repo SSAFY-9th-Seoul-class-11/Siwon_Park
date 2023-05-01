@@ -50,15 +50,15 @@ public class Main_1647_도시분할계획_박시원 {
 		
 		make();
 		
-		int cnt = 0;
 		long result = 0;
+		int bigCost = 0;
 		for(Edge edge: edges) {
-			if(union(edge.A, edge.B)) {
-				result += edge.C;
-				if(++cnt == N-1) break;
-			}
+			if(find(edge.A) == find(edge.B)) continue; //이미 사이클이 발생한 상태면 continue
+			result += edge.C;
+			union(edge.A, edge.B);
+			bigCost = edge.C;
 		}
-		System.out.println(result);
+		System.out.println(result-bigCost);
 
 	}
 	public static boolean union(int a, int b) {
