@@ -108,6 +108,6 @@
    * [2342. Dance Dance Revolution]()
    * [2357. 최솟값과 최댓값]()
    * [12199. 2048 (Easy)]()
-   * []()
+   * [1406. 에디터](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Main_1406_%EC%97%90%EB%94%94%ED%84%B0_%EB%B0%95%EC%8B%9C%EC%9B%90.java)
    * []()
 
