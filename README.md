@@ -57,7 +57,7 @@
   * [9465. 스티커](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Main_9465.java)
 ## 7주차
 * BOJ
-  * [17070. 파이프 옮기기 1](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Main_17070.java)
+  * [17070. 파이프 옮기기 1](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Main_17070_%ED%8C%8C%EC%9D%B4%ED%94%84%EC%98%AE%EA%B8%B0%EA%B8%B0_%EB%B0%95%EC%8B%9C%EC%9B%90.java)
   * [17406. 배열 돌리기 4](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Main_17406.java)
   * [11687. 팩토리얼 0의 개수](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Main_11687.java)
   * [2567. 색종이-2](https://github.com/SSAFY-9th-Seoul-class-11/Siwon_Park/blob/main/SSAFY9_11_Algorithm_Study/src/BOJ/Main_2567.java)
