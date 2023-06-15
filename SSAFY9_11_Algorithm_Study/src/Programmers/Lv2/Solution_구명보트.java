@@ -6,25 +6,13 @@ public class Solution_구명보트 {
 	public int solution(int[] people, int limit) {
         int answer = 0;
         Arrays.sort(people);
-        int size = people.length;
-        int pivot = size-1;
+        int pivot = 0;
         
-        for(int i = 0; i<size; i++){
-            for(int j = pivot; j>i; j--){
-                if(people[i]+people[j]<=limit){
-                    people[i] = 0;
-                    people[j] = 0;
-                    answer++;
-                    pivot = j-1;
-                    break;
-                }        
+        for(int i = people.length-1; i>=pivot; i--){
+            if(people[i]+people[pivot]<=limit){
+                pivot++;
             }
-            if(pivot<=i) break;
-        }
-        for(int i = 0; i<size; i++){
-            if(people[i] != 0){
-                answer++;
-            }
+            answer++;
         }
         return answer;
     }
