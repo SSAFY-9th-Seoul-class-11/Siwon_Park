@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
 
-public class LeapYear {
+public class SelfProject_15 {
 	public static void main(String[] args) {
 
 		Calendar cal = Calendar.getInstance();
