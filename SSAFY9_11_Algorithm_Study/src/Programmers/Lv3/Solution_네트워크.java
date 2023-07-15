@@ -1,6 +1,6 @@
 package Programmers.Lv3;
 
-public class Network {
+public class Solution_네트워크 {
 
 	public int solution(int n, int[][] computers) {
 		int answer = 0;
