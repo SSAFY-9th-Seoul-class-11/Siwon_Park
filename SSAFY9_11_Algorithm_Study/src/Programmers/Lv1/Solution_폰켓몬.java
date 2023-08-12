@@ -1,4 +1,4 @@
-package Programmers.Lv2;
+package Programmers.Lv1;
 import java.util.*;
 
 public class Solution_폰켓몬 {
