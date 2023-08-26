@@ -3,8 +3,7 @@ import java.util.*;
 public class Solution_튜플 {
 	public ArrayList<Integer> solution(String s) {
         ArrayList<Integer> answer = new ArrayList<>();
-        s = s.substring(2,s.length());
-        s = s.substring(0,s.length()-2).replace("},{","-");
+        s = s.substring(2,s.length()-2).replace("},{","-");
         String str[] = s.split("-");        
         Arrays.sort(str,new Comparator<String>(){
             public int compare(String o1, String o2){
