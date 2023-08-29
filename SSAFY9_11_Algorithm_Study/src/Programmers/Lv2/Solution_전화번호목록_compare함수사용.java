@@ -1,6 +1,7 @@
 package Programmers.Lv2;
 import java.util.*;
 class Solution {
+	// compare 사용한 버전 , 시간 초과
 	public class Solution_전화번호목록 {
 		public boolean solution(String[] phone_book) {
 			boolean answer = true;
