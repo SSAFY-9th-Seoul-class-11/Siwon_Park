@@ -2,34 +2,27 @@ package Programmers.Lv1;
 import java.util.*;
 public class Solution_실패율 {
 	public int[] solution(int N, int[] stages) {
-        Arrays.sort(stages);
-        Map<Integer, Double> map = new HashMap<>();
-        int[] stagePNum = new int[N+1];
-        // double[] percent = new double[N+1];
-        int idx = 1;
-        int pCnt = stages.length;
-        for(int i = 0; i<stages.length; i++){
-            if(stages[i]<idx) {
-                pCnt -= stagePNum[idx];
-                map.put(idx, ((double)stagePNum[idx])/((double)pCnt));
-                // percent[idx] = ;
-                idx = stages[i];
-            }
-            if(stages[i]==idx) stagePNum[idx]++;
+        HashMap<Integer, Double> map = new HashMap<>();
+        int[] pFailCnts = new int[N+2];
+        int[] pTotalCnts = new int[N+1];
+        
+        for(int stage : stages){
+            pFailCnts[stage]++;
         }
-        int[] answer = new int[N];
-    for (int i = 0; i < N; i++) {
-        double max = -1;
-        int rKey = 0;
-        for (int key : map.keySet()){
-            if(max < map.get(key)){
-                max = map.get(key);
-                rKey = key;
-            }
+        
+        pTotalCnts[N] = pFailCnts[N]+pFailCnts[N+1];
+        for(int i = N-1; i>=1; i--){
+            pTotalCnts[i] = pFailCnts[i]+pTotalCnts[i+1];
         }
-        answer[i] = rKey;
-        map.remove(rKey);
-    }
-        return answer;
+        
+        for(int i = 1; i<pTotalCnts.length; i++){
+            if(pFailCnts[i]==0 || pTotalCnts[i]==0) map.put(i, 0.0);
+            else map.put(i, (double)pFailCnts[i]/pTotalCnts[i]);
+        }
+                         
+        List<Integer> list = new ArrayList<>(map.keySet());
+        Collections.sort(list, (o1, o2) -> Double.compare(map.get(o2), map.get(o1)));
+        
+        return list.stream().mapToInt(Integer::intValue).toArray();
     }
 }
