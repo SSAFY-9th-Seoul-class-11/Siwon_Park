@@ -11,6 +11,7 @@ public class Main_10845_큐 {
 
 	static Queue<Integer> q = new LinkedList<>();
 	static StringBuilder sb = new StringBuilder();
+	static int last = 0;
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int n = Integer.parseInt(br.readLine());
@@ -24,7 +25,8 @@ public class Main_10845_큐 {
 		StringTokenizer st = new StringTokenizer(str);
 		switch (st.nextToken()) {
 		case "push":
-			q.add(Integer.parseInt(st.nextToken()));
+			last = Integer.parseInt(st.nextToken());
+			q.add(last);
 			break;
 		case "pop":
 			if(q.isEmpty())sb.append(-1 + "\n");
@@ -43,7 +45,7 @@ public class Main_10845_큐 {
 		break;
 	case "back":
 		if(q.isEmpty()) sb.append(-1 + "\n");
-		else sb.append(st.nextToken() + "\n");
+		else sb.append(last + "\n");
 		break;
 		}
 	}
